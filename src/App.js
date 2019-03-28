@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./app.css";
+import "./App.css";
 import { Table } from "react-bootstrap";
 import HeadJumbotron from "./Jumbotron";
 import NavBar from "./NavBar";

@@ -6,4 +6,5 @@ To view the app. In the project directory run:
 
 ### `npm install`
 ### `npm start`
-
+#
+https://api.coingecko.com/api/v3/exchanges
