@@ -1,14 +1,47 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fdfdfe;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.fluid {
+  background-image: url(https://wallet-86a7.kxcdn.com/wp-content/uploads/2017/09/crypto-exchange.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.nav-bar {
+  background-color: #26418f;
+}
+
+h1 {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h5 {
+  color: white;
+  text-shadow: 2px 2px 15px #4e4c4c;
+}
+
+.btn-header {
+  text-shadow: 5px 2px 15px #4e4c4c;
+}
+
+.red {
+  color: rgb(245, 23, 23);
+}
+
+.green {
+  color: rgb(1, 87, 1);
+}
+
+tr {
+  line-height: 2;
 }
