@@ -73,8 +73,8 @@ class App extends Component {
             {" "}
             $ {Number(exchange.trade_volume_24h_btc).toFixed(2)}
           </td>
-          <td>{exchange.country}</td>
-          <td>{exchange.year_established}</td>
+          <td>{exchange.country || <span class="na-span">N/A</span>}</td>
+          <td>{exchange.year_established || <span class="na-span">N/A</span>}</td>
         </tr>
       </React.Fragment>
     ));

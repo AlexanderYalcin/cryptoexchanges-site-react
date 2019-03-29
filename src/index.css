@@ -45,3 +45,7 @@ h5 {
 tr {
   line-height: 2;
 }
+
+.na-span {
+  color: lightslategrey;
+}
