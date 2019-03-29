@@ -3,6 +3,7 @@ import "./App.css";
 import { Table } from "react-bootstrap";
 import HeadJumbotron from "./Jumbotron";
 import NavBar from "./NavBar";
+// import { SSL_OP_LEGACY_SERVER_CONNECT } from "constants";
 
 const exchangesToInclude = [
   "ANX",
@@ -58,7 +59,7 @@ class App extends Component {
   render() {
     let exchanges = this.state.data.map(exchange => (
       <React.Fragment>
-        <tr key={exchange.symbol}>
+        <tr key={exchange.id} >
           <td>
             <img src={exchange.image} alt={exchange.name} height="30" width="30" />
           </td>
@@ -71,10 +72,10 @@ class App extends Component {
             }
           >
             {" "}
-            $ {Number(exchange.trade_volume_24h_btc).toFixed(2)}
+            ₿ {Number(exchange.trade_volume_24h_btc).toFixed(2)}
           </td>
-          <td>{exchange.country || <span class="na-span">N/A</span>}</td>
-          <td>{exchange.year_established || <span class="na-span">N/A</span>}</td>
+          <td>{exchange.country || <span className="na-span">N/A</span>}</td>
+          <td>{exchange.year_established || <span className="na-span">N/A</span>}</td>
         </tr>
       </React.Fragment>
     ));
